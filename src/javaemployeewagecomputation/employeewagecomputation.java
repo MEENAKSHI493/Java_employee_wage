@@ -5,7 +5,7 @@ public class employeewagecomputation {
 	public static void main(String[] args) {
 		int PartTimeHours = 4;
 		int FullDay = 8;
-		int WageParHour = 20;
+		int WarkingHourDay = 100;
 		int WorkingDayParMonth = 20;
 		final int empPresent = 1;
 		final int empPartTime = 2;
@@ -15,12 +15,12 @@ public class employeewagecomputation {
 		
 		switch (empCheck) {
 		case empPresent:
-			dailyWage = FullDay*WageParHour*WorkingDayParMonth;
+			dailyWage = FullDay*WarkingHourDay*WorkingDayParMonth;
 			System.out.println("Employee is Present");
 			System.out.println("Employee Daily 20 Day Wage Is : "+ dailyWage);
 			break;
 		case empPartTime:{
-			dailyWage = PartTimeHours*WageParHour*WorkingDayParMonth;
+			dailyWage = PartTimeHours*WarkingHourDay*WorkingDayParMonth;
 			System.out.println("Employee Part Time is Present");
 			System.out.println("Employee Part Time 20 Day Wage Is : "+ dailyWage);
 			break;
@@ -28,6 +28,8 @@ public class employeewagecomputation {
 		default:
 			System.out.println("Employee is Absent");
 			break;
-			}
+		}
 	}
 	}
+	
+		
